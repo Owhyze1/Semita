@@ -3,7 +3,15 @@ import { Root } from "native-base";
 import { StackNavigator, DrawerNavigator } from "react-navigation";
 
 // Semita screen imports
+import Home from "./screens/home/";
 import Tracking from "./screens/~TRACKING/tracking";
+import Settings from "./screens/~SETTINGS/settings";
+import User_Information from "./screens/~USER INFORMATION/user_information";
+import Emergency_Contacts from "./screens/~EMERGENCY CONTACTS/emergency_contacts";
+import Emergency_Time_Period from "./screens/~EMERGENCY TIME PERIOD/emergency_time_period";
+import Permissions from "./screens/~PERMISSIONS/permissions";
+
+
 
 // Native-base imports
 import Header from "./screens/Header/";
@@ -78,7 +86,6 @@ import AdvSegment from "./screens/segment/segmentTab";
 import SimpleDeck from "./screens/deckswiper/simple";
 import AdvancedDeck from "./screens/deckswiper/advanced";
 
-import Home from "./screens/home/";
 import Anatomy from "./screens/anatomy/";
 import Footer from "./screens/footer/";
 import NHBadge from "./screens/badge/";
@@ -115,9 +122,21 @@ import Actionsheet from "./screens/actionsheet";
 
 const Drawer = DrawerNavigator(
     {
-        Home: { screen: Home },          // SEMITA: Opening Screen
-        Anatomy: { screen: Tracking },   // SEMITA: Live GPS Tracking screen
-        Header: { screen: Header },      // src/screens/Header/index.android.js
+        // SEMITA Screens
+        Opening: { screen: Home },          // Opening Screen
+        Tracking: { screen: Tracking },  // Live GPS Tracking screen
+        Settings: { screen: Settings },  // Screen. Originally: src/screens/Header/index.android.js
+        User_Information: { screen: User_Information },
+        Emergency_Contacts: { screen: Emergency_Contacts },
+        Emergency_Time_Period: { screen: Emergency_Time_Period },
+        Permissions: { screen: Permissions },
+
+
+
+        // Native Base screens
+        Home: { screen: Home },
+        Anatomy: { screen: Anatomy },   
+        Header: { screen: Header }, 
         Footer: { screen: Footer },      // src/screens/Footer/index.js
         NHBadge: { screen: NHBadge },    // src/screens/badge/index.js
         NHButton: { screen: NHButton },

@@ -16,6 +16,48 @@ import styles from "./style";
 const drawerCover = require("../../../assets/launchscreen-bg.png");
 const drawerImage = require("../../../assets/splashscreen.png");
 const datas = [
+    {
+        name: "Home",
+        route: "Opening",
+        icon: "home",
+        bg: "#C5F442"
+    },
+    {
+        name: "Start Tracking",
+        route: "Tracking",
+        icon: "bicycle",
+        bg: "#C5F442"
+    },
+    {
+        name: "Settings",
+        route: "Settings",
+        icon: "menu",
+        bg: "#C5F442"
+    },
+    {
+        name: "User Information",
+        route: "User_Information",
+        icon: "menu",
+        bg: "#C5F442"
+    },
+    {
+        name: "Emergency Contacts",
+        route: "Emergency_Contacts",
+        icon: "menu",
+        bg: "#C5F442"
+    },
+    {
+        name: "Emergency Time Period",
+        route: "Emergency_Time_Period",
+        icon: "menu",
+        bg: "#C5F442"
+    },
+    {
+        name: "Permissions",
+        route: "Permissions",
+        icon: "menu",
+        bg: "#C5F442"
+    },
   {
     name: "Campaigns",
     route: "Anatomy",

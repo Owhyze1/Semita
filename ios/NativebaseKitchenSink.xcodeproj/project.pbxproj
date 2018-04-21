@@ -76,6 +76,7 @@
 		21E44EB7A81A4A4EBB29C071 /* Titillium Web_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B489B93CA1ED427F8185FE5B /* Titillium Web_Regular.ttf */; };
 		437574A2ACFE40BB950708C8 /* Titillium Web_Semi_Bold_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34B47746558B4F228C5A44BC /* Titillium Web_Semi_Bold_Italic.ttf */; };
 		B22D879B587D41C3856A5C96 /* Titillium Web_Semi_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FD48F9000AD4C18BFCBF9A2 /* Titillium Web_Semi_Bold.ttf */; };
+		1C2E66D9969D49A29A0F03A6 /* Lobster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 315EBA5A9FC44D8C8AFD3858 /* Lobster.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -429,6 +430,7 @@
 		B489B93CA1ED427F8185FE5B /* Titillium Web_Regular.ttf */ = {isa = PBXFileReference; name = "Titillium Web_Regular.ttf"; path = "../assets/fonts/Titillium Web_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		34B47746558B4F228C5A44BC /* Titillium Web_Semi_Bold_Italic.ttf */ = {isa = PBXFileReference; name = "Titillium Web_Semi_Bold_Italic.ttf"; path = "../assets/fonts/Titillium Web_Semi_Bold_Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		7FD48F9000AD4C18BFCBF9A2 /* Titillium Web_Semi_Bold.ttf */ = {isa = PBXFileReference; name = "Titillium Web_Semi_Bold.ttf"; path = "../assets/fonts/Titillium Web_Semi_Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		315EBA5A9FC44D8C8AFD3858 /* Lobster.ttf */ = {isa = PBXFileReference; name = "Lobster.ttf"; path = "../assets/fonts/Lobster.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -667,6 +669,7 @@
 				B489B93CA1ED427F8185FE5B /* Titillium Web_Regular.ttf */,
 				34B47746558B4F228C5A44BC /* Titillium Web_Semi_Bold_Italic.ttf */,
 				7FD48F9000AD4C18BFCBF9A2 /* Titillium Web_Semi_Bold.ttf */,
+				315EBA5A9FC44D8C8AFD3858 /* Lobster.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1250,6 +1253,7 @@
 				21E44EB7A81A4A4EBB29C071 /* Titillium Web_Regular.ttf in Resources */,
 				437574A2ACFE40BB950708C8 /* Titillium Web_Semi_Bold_Italic.ttf in Resources */,
 				B22D879B587D41C3856A5C96 /* Titillium Web_Semi_Bold.ttf in Resources */,
+				1C2E66D9969D49A29A0F03A6 /* Lobster.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

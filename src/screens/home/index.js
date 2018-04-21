@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { ImageBackground, Text, View } from "react-native";
-import { Container, Button } from "native-base";
+import { Dimensions, ImageBackground, Text, View } from "react-native";
+import { Container, Button, Title } from "native-base";
 
 import styles from "./styles";
 
@@ -10,18 +10,32 @@ class Home extends Component {
     
     render() {
         return (
+
             <Container>                
-                <ImageBackground source={homeScreenBackground} style={styles.image} >
+                <ImageBackground
+                    source={homeScreenBackground}
+                    style={styles.image} 
+                    >
                     
-                    <View style={{ justifyContent: 'center' }}>
+                    <View style={{ alignItems: 'center' }}>
 
                         <Text style={styles.title}>Semita</Text>
-                        <Button                            
-                            onPress={() => this.props.navigation.navigate("DrawerOpen")}
-                            style={styles.button}
-                        >
-                            <Text style={styles.buttonText}>HAPPY TRACKING!</Text>
-                        </Button>
+                        <View>
+                            <Button                            
+                                onPress={() => this.props.navigation.navigate("Tracking")}
+                                style={styles.button}
+                            >
+                                <Text style={styles.buttonText}>HAPPY TRACKING!</Text>
+                            </Button>
+                        </View>
+                        <View>
+                            <Button
+                                onPress={() => this.props.navigation.navigate("DrawerOpen")}
+                                style={styles.button}
+                            >
+                                <Text style={styles.buttonText}>OPTIONS</Text>
+                            </Button>
+                        </View>
                     </View>
 
                </ImageBackground>                 

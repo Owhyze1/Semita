@@ -30,6 +30,7 @@ class RowNB extends Component {
         <Grid>
           <Row style={{ backgroundColor: "#635DB7" }} />
           <Row style={{ backgroundColor: "#00CE9F" }} />
+          <Row style={{ backgroundColor: "#000000" }}/>
         </Grid>
       </Container>
     );
