@@ -1,3 +1,8 @@
+# Current State of Application
+The functionality of the application, Semita, is nearly a complete. 
+The remaining portions that need to be complete are user interface elements, and the google maps application programming interface integration. 
+Once these components are fulfilled, users will be able track longitude and latitude coordinates.
+
 # Semita
 
 Semita is a react native mobile application by UMUC students (see contributors section) for the CMSC 495 Capstone Class.
