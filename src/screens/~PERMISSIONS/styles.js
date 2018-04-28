@@ -4,17 +4,24 @@ export default {
 
     header: {
         backgroundColor: 'rgba(1,1,1,0.8)',
-
+        alignItems: 'center'
+    },
+    title: {
+        fontWeight: 'bold',
+        fontSize: 20,
+        color: 'white'
     },
 
-    button: {
+    settings_button: {
         justifyContent: 'center',
         alignSelf: 'flex-end'
     },
     image: {
         flex: 9
     },
-    main_window: {
-        alignItems: 'center'
+
+    listitem: {
+        marginTop: 20
     }
+  
 }

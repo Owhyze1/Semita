@@ -42,7 +42,11 @@
   "rnpm": {
     "assets": [
       "./assets/fonts",
-      "./node_modules/native-base/Fonts/Lobster.ttf"
+      "./node_modules/native-base/Fonts/Lobster.ttf",
+      "./node_modules/native-base/Fonts/Titillium Web_Regular.ttf",
+      "./node_modules/native-base/Fonts/Quicksand Regular.ttf"
+
+
     ]
   }
 }

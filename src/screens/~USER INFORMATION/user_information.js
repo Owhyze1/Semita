@@ -7,7 +7,8 @@ import {
     Button,
     Icon,
     Card, CardItem,
-    Text,
+    Text, Title,
+    Form, Item, Input, Label
 
 } from "native-base";
 import { Row, Col, Grid } from 'react-native-easy-grid';
@@ -25,7 +26,7 @@ class User_Information extends Component {
 
 
                 <Grid style={styles.header}>
-                    <Col >
+                    <Col size={1}>
 
                         <Button
                             transparent
@@ -34,11 +35,16 @@ class User_Information extends Component {
                             <Icon style={{ color: 'white' }} active name="home" />
                         </Button>
                     </Col>
-                    <Col>
+                    <Col size={4}>
+                        <View>
+                            <Title style={styles.title}>User Information</Title>
+                        </View>
+                    </Col>
+                    <Col size={1}>
 
                         <Button
                             transparent
-                            style={styles.button}
+                            style={styles.settings_button}
                             onPress={() => this.props.navigation.navigate("Settings")}
                         >
                             <Icon style={{ color: 'white' }} active name="settings" />
@@ -54,10 +60,24 @@ class User_Information extends Component {
 
 
 
-                    <View style={styles.main_window}>
-                        <Text>User Information Screen</Text>
-                    </View>
+                  
 
+
+                    <Content>
+                        <Form>
+                            <Item floatingLabel>
+                                <Label>Name</Label>
+                                <Input />
+                            </Item>
+                            <Item floatingLabel last>
+                                <Label>Phone Number</Label>
+                                <Input secureTextEntry />
+                            </Item>
+                        </Form>
+                        <Button block style={{ margin: 15, marginTop: 50, backgroundColor: 'rgba(1,1,1,0.6)' }}>
+                            <Text>Save</Text>
+                        </Button>
+                    </Content>
 
 
                 </ImageBackground>

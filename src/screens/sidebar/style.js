@@ -7,7 +7,7 @@ const deviceWidth = Dimensions.get("window").width;
 export default {
   drawerCover: {
     alignSelf: "stretch",
-    height: deviceHeight / 3.5,
+    height: deviceHeight / 3,
     width: null,
     position: "relative",
     marginBottom: 10
@@ -23,7 +23,8 @@ export default {
   text: {
     fontWeight: Platform.OS === "ios" ? "500" : "400",
     fontSize: 16,
-    marginLeft: 20
+      marginLeft: 20,
+    fontFamily: "Quicksand"      
   },
   badgeText: {
     fontSize: Platform.OS === "ios" ? 13 : 11,

@@ -1,6 +1,6 @@
-//import { Fonts } from '../../theme/utils/Fonts';
-//var Lobster = require('../../../assets/Lobster.ttf');
-//var Lobster = require('../../../node_modules/native-base/Fonts/Lobster.ttf');
+
+const React = require("react-native");
+const { Platform, Dimensions } = React;
 
 
 export default {
@@ -13,18 +13,18 @@ export default {
     },
     
     title: {
-        fontFamily: 'Lobster',
         textAlign: 'center',
-        fontSize: 90,
-        fontWeight: 'bold'
+        fontSize: 110,
+        fontFamily: 'Lobster',
+        color: '#60463c'
+
     },
     button: {
-        backgroundColor: 'rgba(0,0,0,0.2)',  
-        borderRadius: 10,        
-        marginBottom: 20,
+        margin: 10,
         marginLeft: 50,
         marginRight: 50,
-        padding: 10
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        borderRadius: 10,
     },
     buttonText: {
         fontFamily: "Titillium Web",

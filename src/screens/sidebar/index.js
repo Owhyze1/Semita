@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Image } from "react-native";
+import { ImageBackground, Image, View } from "react-native";
 import {
     Content,
     Text,
@@ -15,6 +15,9 @@ import styles from "./style";
 
 const drawerCover = require("../../../assets/launchscreen-bg.png");
 const drawerImage = require("../../../assets/splashscreen.png");
+const screenBackground = require("../../../assets/Semita-background-tracks.png");
+
+
 const datas = [
     {
         name: "Home",
@@ -25,37 +28,37 @@ const datas = [
     {
         name: "Start Tracking",
         route: "Tracking",
-        icon: "bicycle",
+        icon: "navigate",
         bg: "#C5F442"
     },
     {
         name: "Settings",
         route: "Settings",
-        icon: "menu",
+        icon: "settings",
         bg: "#C5F442"
     },
     {
         name: "User Information",
         route: "User_Information",
-        icon: "menu",
+        icon: "paper",
         bg: "#C5F442"
     },
     {
         name: "Emergency Contacts",
         route: "Emergency_Contacts",
-        icon: "menu",
+        icon: "person",
         bg: "#C5F442"
     },
     {
         name: "Emergency Time Period",
         route: "Emergency_Time_Period",
-        icon: "menu",
+        icon: "alarm",
         bg: "#C5F442"
     },
     {
         name: "Permissions",
         route: "Permissions",
-        icon: "menu",
+        icon: "lock",
         bg: "#C5F442"
     },
     {
@@ -231,10 +234,11 @@ class SideBar extends Component {
             <Container>
                 <Content
                     bounces={false}
-                    style={{ flex: 1, backgroundColor: "#fff", top: -1 }}
+                    style={{ flex: 1, backgroundColor: "rgba(141,104,2,0.2)", top: -1 }}
                 >
+
                     <Image source={drawerCover} style={styles.drawerCover} />
-                    <Image square style={styles.drawerImage} source={drawerImage} />
+
 
                     <List
                         dataArray={datas}

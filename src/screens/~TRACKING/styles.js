@@ -13,7 +13,7 @@ export default {
         backgroundColor: 'rgba(0,0,0,0.8)'
     },
     header_status_indicator: {
-        backgroundColor: '#8bc34a',
+        backgroundColor: 'green',
         justifyContent: 'center',
         alignItems: 'center'        
     },

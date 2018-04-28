@@ -30,12 +30,12 @@ class Tracking extends Component {
                     <View style={styles.flex_one}>
                                                 
 
-                        <Grid style={ styles.header_color}>
-                            <Col size={2} style={ styles.header_status_indicator }>
+                        <Grid style={styles.header_color}>
+                            <Col size={2} style={styles.header_status_indicator}>
                                 <Text style={{ fontWeight: 'bold' }}>ENABLED</Text>
                             </Col>
 
-                            <Col size={5} style={ styles.header_labels }>
+                            <Col size={5} style={styles.header_labels}>
                                 <Text style={{ color: 'white' }}>EMERGENCY NOTIFICATIONS</Text>
                             </Col>
 
@@ -50,11 +50,11 @@ class Tracking extends Component {
                         </Grid>
 
 
-                        <Grid style={ styles.card_grid }>
+                        <Grid style={styles.card_grid}>
                             
                             <Row style={{ alignItems: 'center' }}>
                                 <Card style={styles.card}>
-                                    <CardItem bordered style = { styles.card_item } >
+                                    <CardItem bordered style = {styles.card_item} >
                                         <H1 style={{ fontWeight: 'bold' }}>Latitude</H1>
                                     </CardItem>
                                     <CardItem style={styles.card_item}>

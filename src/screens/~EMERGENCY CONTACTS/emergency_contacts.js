@@ -7,7 +7,8 @@ import {
     Button,
     Icon,
     Card, CardItem,
-    Text,
+    Text, Title,
+    Form, Item, Input, Label   
 
 } from "native-base";
 import { Row, Col, Grid } from 'react-native-easy-grid';
@@ -25,7 +26,7 @@ class Emergency_Contacts extends Component {
 
 
                 <Grid style={styles.header}>
-                    <Col >
+                    <Col size={1}>
 
                         <Button
                             transparent
@@ -34,11 +35,16 @@ class Emergency_Contacts extends Component {
                             <Icon style={{ color: 'white' }} active name="home" />
                         </Button>
                     </Col>
-                    <Col>
+                    <Col size={4}>
+                        <View>
+                            <Title style={styles.title}>Emergency Contacts</Title>
+                        </View>
+                    </Col>
+                    <Col size={1}>
 
                         <Button
                             transparent
-                            style={styles.button}
+                            style={styles.header_button}
                             onPress={() => this.props.navigation.navigate("Settings")}
                         >
                             <Icon style={{ color: 'white' }} active name="settings" />
@@ -52,11 +58,64 @@ class Emergency_Contacts extends Component {
                 >
 
 
+                    
+
+                    <Content>
+
+                        <Button block style={ styles.form_button} >
+                            <Text>Choose from Contact List</Text>
+                        </Button>
+
+                        <Form>
+                            <Item fixedLabel>
+                                <Label>Contact #1</Label>
+                                <Input />
+                            </Item>
+                            <Item fixedLabel last>
+                                <Label>Phone Number</Label>
+                                <Input />
+                            </Item>
+
+                            <View style={{
+                                backgroundColor: 'rgba(0,0,0,0.1)'
+                            }}>
+                                <Item fixedLabel >
+                                    <Label>Contact #2</Label>
+                                    <Input />
+                                </Item>
+                                <Item fixedLabel last>
+                                    <Label>Phone Number</Label>
+                                    <Input  />
+                                </Item>
+
+                            </View>
+
+                            <Item fixedLabel>
+                                <Label>Contact #3</Label>
+                                <Input />
+                            </Item>
+                            <Item fixedLabel last>
+                                <Label>Phone Number</Label>
+                                <Input secureTextEntry />
+                            </Item>
+                        </Form>
+
+                        <Grid>
+                            <Col>
+                                <Button block style={styles.form_button}>
+                                    <Text>Edit</Text>
+                                </Button>
+                            </Col>
+                            <Col>
+
+                                <Button block style={styles.form_button}>
+                                    <Text>Save</Text>
+                                </Button>
+                            </Col>
+                        </Grid>
 
 
-                    <View style={styles.main_window}>
-                        <Text>Emergency Contacts Screen</Text>
-                    </View>
+                    </Content>
 
 
 
