@@ -1,24 +1,41 @@
 import React, { Component } from "react";
-
-import {
-    Container, 
-    Header,
-    Content,
-    Button,
-    Icon,
-    Card, CardItem,
-    Text,    
-    H1
-} from "native-base";
+import { Container, Button, Icon, Card, CardItem, Text, H1 } from "native-base";
 import { Row, Col, Grid } from 'react-native-easy-grid';
 import { ImageBackground, View, TextInput } from 'react-native';
 import styles from "./styles";
 
 const screenBackground = require("../../../assets/Semita-background-tracks.png");
 
-
-
 class Tracking extends Component {
+
+    // Constructor and componentDidMount function found at
+    // https://hackernoon.com/react-native-basics-geolocation-adf3c0d10112
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            latitude: null,
+            longitude: null,
+            error: null
+        };
+    }
+
+    componentDidMount() {
+        this.watchId = navigator.geolocation.watchPosition(
+            (position) => {
+                this.setState({
+                    latitude: position.coords.latitude,
+                    longitude: position.coords.longitude,
+                    error: null
+                });
+            },
+            (error) => this.setState({ error: error.message }),
+            { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000, distanceFilter: 10 }
+        );
+    }
+
+
     render() {
         return (
             <Container>
@@ -32,11 +49,11 @@ class Tracking extends Component {
 
                         <Grid style={styles.header_color}>
                             <Col size={2} style={styles.header_status_indicator}>
-                                <Text style={{ fontWeight: 'bold' }}>ENABLED</Text>
+                                <Text style={{ fontWeight: 'bold', color: 'white' }}>ENABLED</Text>
                             </Col>
 
                             <Col size={5} style={styles.header_labels}>
-                                <Text style={{ color: 'white' }}>EMERGENCY NOTIFICATIONS</Text>
+                                <Text style={{ fontWeight: 'bold', color: 'red' }}>EMERGENCY NOTIFICATIONS</Text>
                             </Col>
 
                             <Col size={1} style={styles.header_labels}>
@@ -58,7 +75,7 @@ class Tracking extends Component {
                                         <H1 style={{ fontWeight: 'bold' }}>Latitude</H1>
                                     </CardItem>
                                     <CardItem style={styles.card_item}>
-                                        <H1>38.91265</H1>
+                                        <H1>{this.state.latitude}</H1>
                                     </CardItem>
                                 </Card>
 
@@ -67,9 +84,10 @@ class Tracking extends Component {
                                         <H1 style={{ fontWeight: 'bold' }}>Longitude</H1>
                                     </CardItem>
                                     <CardItem style={styles.card_item}>
-                                        <H1>-76.8475</H1>
+                                        <H1>{this.state.longitude}</H1>
                                     </CardItem>
                                 </Card>
+                                {this.state.error ? <Text>ERROR!! {this.state.error}</Text>: null}
                             </Row>
                         </Grid>
 
@@ -120,73 +138,3 @@ class Tracking extends Component {
 }
 
 export default Tracking;
-
-
-
-/* saving */
-
-/*
-<Row size={4} />
-
-    <Row size={1} style={{ justifyContent: 'center', marginTop: 20 }}>
-        <Text style={{ fontWeight: 'bold' }}>NOTIFICATION COUNTDOWN</Text>
-        <Button disabled><Text>Test</Text></Button>
-    </Row>
-
-    <Row size={1} style={{ margin: 10 }}>
-        <Card style={styles.row}>
-            <CardItem>
-                <Text>0</Text>
-            </CardItem>
-        </Card>
-
-        <Card>
-            <CardItem>
-                <Text>2</Text>
-            </CardItem>
-
-        </Card>
-
-        <Card>
-            <CardItem>
-                <Text>30</Text>
-            </CardItem>
-
-        </Card>
-
-        <Card>
-            <CardItem>
-                <Text>30</Text>
-            </CardItem>
-
-        </Card>
-    </Row>
-
-    <Row size={1}>
-        <Card>
-            <CardItem>
-                <Text>Days</Text>
-            </CardItem>
-        </Card>
-
-        <Card>
-            <CardItem>
-                <Text>Hours</Text>
-            </CardItem>
-        </Card>
-
-        <Card>
-            <CardItem>
-                <Text>Mnutes</Text>
-            </CardItem>
-        </Card>
-
-        <Card>
-            <CardItem>
-                <Text>Seconds</Text>
-            </CardItem>
-        </Card>
-    </Row>
-
-    <Row size={2} />
-    */
