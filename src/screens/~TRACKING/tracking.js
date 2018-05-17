@@ -3,6 +3,7 @@ import { Container, Button, Icon, Card, CardItem, Text, H1 } from "native-base";
 import { Row, Col, Grid } from 'react-native-easy-grid';
 import { ImageBackground, View, TextInput } from 'react-native';
 import styles from "./styles";
+import LocationRequest from '../~PERMISSIONS/locationrequest';
 
 const screenBackground = require("../../../assets/Semita-background-tracks.png");
 
@@ -13,6 +14,9 @@ class Tracking extends Component {
 
     constructor(props) {
         super(props);
+        Location = new LocationRequest();
+
+        AskForGps =  () => { Location.requestGPSPermission(); }
 
         this.state = {
             latitude: null,
@@ -37,6 +41,8 @@ class Tracking extends Component {
 
 
     render() {
+
+
         return (
             <Container>
 
@@ -45,7 +51,7 @@ class Tracking extends Component {
                     style={styles.flex_one}
                 >
                     <View style={styles.flex_one}>
-                                                
+
 
                         <Grid style={styles.header_color}>
                             <Col size={2} style={styles.header_status_indicator}>
@@ -68,7 +74,7 @@ class Tracking extends Component {
 
 
                         <Grid style={styles.card_grid}>
-                            
+
                             <Row style={{ alignItems: 'center' }}>
                                 <Card style={styles.card}>
                                     <CardItem bordered style = {styles.card_item} >
@@ -87,8 +93,9 @@ class Tracking extends Component {
                                         <H1>{this.state.longitude}</H1>
                                     </CardItem>
                                 </Card>
-                                {this.state.error ? <Text>ERROR!! {this.state.error}</Text>: null}
                             </Row>
+                            
+
                         </Grid>
 
 
@@ -98,7 +105,7 @@ class Tracking extends Component {
                             </Row>
 
                             <Row size={25}>
-                                                    
+
                                 <Col>
                                     <Button large disabled style={styles.button}>
                                         <Text>00</Text>
@@ -117,21 +124,21 @@ class Tracking extends Component {
                                     </Button>
                                     <Text style={styles.countdownText}>Minutes</Text>
                                 </Col>
-                                <Col> 
+                                <Col>
                                     <Button large disabled style={styles.button}>
                                         <Text>30</Text>
                                     </Button>
                                     <Text style={styles.countdownText}>Seconds</Text>
                                 </Col>
-                            
+
                             </Row>
                             <Row size={35}/>
                         </Grid>
 
-                    
+
                 </View>
                 </ImageBackground>
-               
+
             </Container>
         );
     }
