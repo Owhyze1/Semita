@@ -1,3 +1,7 @@
+# Screenshots of Application
+
+![All Screens](https://user-images.githubusercontent.com/16492566/85144547-4c2a7980-b219-11ea-98b8-a26823aaa1bb.png)
+
 # Current State of Application
 The functionality of the application, Semita, is nearly a complete. 
 The remaining portions that need to be complete are user interface elements, and the google maps application programming interface integration. 

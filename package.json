@@ -31,9 +31,15 @@
   "dependencies": {
     "color": "1.0.3",
     "expo": "^26.0.0",
+<<<<<<< HEAD
     "lodash": "^4.17.15",
     "moment": "^2.26.0",
     "native-base": "^2.13.12",
+=======
+    "lodash": "4.17.19",
+    "moment": "2.19.3",
+    "native-base": "2.3.9",
+>>>>>>> e033eddede16b435cfd74d61a59104194f958b2c
     "react": "16.0.0",
     "react-native": "^0.62.2",
     "react-native-device-info": "^7.3.1",
