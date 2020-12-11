@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="39288dd8-c3ba-4dd0-9c48-6ed802269361" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -41,7 +40,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="gradle.compiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.24604744" />
   </component>
   <component name="RunManager" selected="Gradle.C:/Users/Owhyz_000/Documents/GitHub/Semita/node_modules/@expo/vector-icons/node_modules/react-native-vector-icons/android/build.gradle">
@@ -185,14 +184,20 @@
       <screen x="1238" y="-1080" width="1920" height="1040" />
     </state>
     <state x="1420" y="-1000" width="1433" height="856" key="AVDManager/0.0.1728.1112/1238.-1080.1920.1040/-752.-1080.1920.1040@1238.-1080.1920.1040" timestamp="1607636224204" />
-    <state x="1699" y="-915" key="SettingsEditor" timestamp="1607639595913">
+    <state x="1699" y="-915" key="SettingsEditor" timestamp="1607722233986">
       <screen x="1238" y="-1080" width="1920" height="1040" />
     </state>
+    <state x="1699" y="-915" key="SettingsEditor/0.0.1728.1112/-752.-1080.1920.1040/1238.-1080.1920.1040@1238.-1080.1920.1040" timestamp="1607722233986" />
     <state x="1699" y="-915" key="SettingsEditor/0.0.1728.1112/1238.-1080.1920.1040/-752.-1080.1920.1040@1238.-1080.1920.1040" timestamp="1607639595913" />
-    <state x="1580" y="-1072" width="1129" height="944" key="find.popup" timestamp="1607637834548">
+    <state x="1854" y="-1053" width="1129" height="944" key="find.popup" timestamp="1607722458678">
       <screen x="1238" y="-1080" width="1920" height="1040" />
     </state>
+    <state x="1854" y="-1053" width="1129" height="944" key="find.popup/0.0.1728.1112/-752.-1080.1920.1040/1238.-1080.1920.1040@1238.-1080.1920.1040" timestamp="1607722458678" />
     <state x="1580" y="-1072" width="1129" height="944" key="find.popup/0.0.1728.1112/1238.-1080.1920.1040/-752.-1080.1920.1040@1238.-1080.1920.1040" timestamp="1607637834548" />
+    <state x="1858" y="-851" width="672" height="678" key="search.everywhere.popup" timestamp="1607722287280">
+      <screen x="1238" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="1858" y="-851" width="672" height="678" key="search.everywhere.popup/0.0.1728.1112/-752.-1080.1920.1040/1238.-1080.1920.1040@1238.-1080.1920.1040" timestamp="1607722287280" />
   </component>
   <component name="masterDetails">
     <states>
