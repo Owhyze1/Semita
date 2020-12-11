@@ -8,7 +8,10 @@
     <option name="COMMAND_LINE_OPTIONS" value="--stacktrace --debug" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39288dd8-c3ba-4dd0-9c48-6ed802269361" name="Default" comment="" />
+    <list default="true" id="39288dd8-c3ba-4dd0-9c48-6ed802269361" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
